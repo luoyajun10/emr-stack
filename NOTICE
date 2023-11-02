@@ -1,0 +1,7 @@
+
+E-MapReduce(EMR)
+The components included in EMR are based on the open-source community.
+
+# Notice for Java
+This product includes Java 8, so you do not need to install it separately.
+If your application requires a special version of Java, please specify separately.

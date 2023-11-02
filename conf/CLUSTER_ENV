@@ -1,0 +1,42 @@
+# LANG
+export LANG=zh_CN.UTF-8
+
+# EMR
+export EMR_HOME=/usr/lib/emr-current
+export EMR_PID_DIR=$EMR_HOME/pid
+
+# JAVA
+export JAVA_HOME=/usr/lib/jdk-current
+
+# HADOOP
+export HADOOP_HOME=/usr/lib/hadoop-current
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export HADOOP_CMD=$HADOOP_HOME/bin/hadoop
+export HADOOP_STREAMING_LIB_PATH=$HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.8.5.jar
+export HADOOP_LIB_NATIVE_PATH=$HADOOP_HOME/lib/native:$HADOOP_LIB_NATIVE_PATH
+
+# HIVE
+export HIVE_HOME=/usr/lib/hive-current
+
+# SPARK
+export SPARK_HOME=/usr/lib/spark-current
+
+# HBASE
+export HBASE_HOME=/usr/lib/hbase-current
+
+# KAFKA
+export KAFKA_HOME=/usr/lib/kafka-current
+
+# ZOOKEEPER
+export ZOOKEEPER_HOME=/usr/lib/zookeeper-current
+
+# SEATUNNEL
+export SEATUNNEL_HOME=/usr/lib/seatunnel-current
+
+# CLASSPATH
+export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$HADOOP_HOME/lib:$HADOOP_STREAMING_LIB_PATH:$HIVE_HOME/lib:$SPARK_HOME/jars:$HBASE_HOME/lib:$KAFKA_HOME/libs:$CLASSPATH
+
+# PATH
+export PATH=$EMR_HOME/bin:$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$HIVE_HOME/bin:$SPARK_HOME/bin:$HBASE_HOME/bin:$KAFKA_HOME/bin:$ZOOKEEPER_HOME/bin:$SEATUNNEL_HOME/bin:$PATH

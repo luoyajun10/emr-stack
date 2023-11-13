@@ -3,12 +3,12 @@
 <configuration>
     <property>
         <name>tez.lib.uris</name>
-        <value>hdfs://hadoop01:9000/tez/tez.tgz</value>
+        <value>hdfs://hadoop01:9000/tez/tez.tar.gz</value>
     </property>
 
     <property>
         <name>tez.use.cluster.hadoop-libs</name>
-        <value>true</value>
+        <value>false</value>
     </property>
 
     <property>

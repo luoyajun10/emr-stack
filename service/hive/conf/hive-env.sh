@@ -48,7 +48,6 @@ export HADOOP_HEAPSIZE=512
 
 
 # Set HADOOP_HOME to point to a specific hadoop install directory
-# HADOOP_HOME=${bin}/../../hadoop
 HADOOP_HOME=/usr/lib/hadoop-current
 
 # Hive Configuration Directory can be controlled by:
@@ -64,15 +63,4 @@ done
 for jar in `ls $TEZ_HOME/lib`; do
     export TEZ_JARS=$TEZ_JARS:$TEZ_HOME/lib/$jar
 done
-export HIVE_AUX_JARS_PATH=${TEZ_JARS:1}
-
-export TEZ_HOME=/usr/lib/tez-current
-export TEZ_JARS=""
-for jar in `ls $TEZ_HOME | grep jar`; do
-    export TEZ_JARS=$TEZ_JARS:$TEZ_HOME/$jar
-done
-for jar in `ls $TEZ_HOME/lib`; do
-    export TEZ_JARS=$TEZ_JARS:$TEZ_HOME/lib/$jar
-done
-
 export HIVE_AUX_JARS_PATH=${TEZ_JARS:1}

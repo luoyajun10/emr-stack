@@ -101,3 +101,7 @@ export HADOOP_IDENT_STRING=$USER
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${HADOOP_HOME}/lib/native
 
+# Added to the HADOOP_CLASSPATH
+if [ -d "/usr/lib/tez-current" ]; then
+  export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:/usr/lib/tez-current/*.jar:/usr/lib/tez-current/lib/*.jar:/usr/lib/tez-current/conf
+fi

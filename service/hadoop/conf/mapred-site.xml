@@ -25,11 +25,13 @@
   <property>
     <name>mapreduce.jobhistory.address</name>
     <value>hadoop01:10020</value>
+    <description>MapReduce JobHistory Server IPC host:port</description>
   </property>
 
   <property>
     <name>mapreduce.jobhistory.webapp.address</name>
     <value>hadoop01:19888</value>
+    <description>MapReduce JobHistory Server Web UI host:port</description>
   </property>
 
   <property>

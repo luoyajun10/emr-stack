@@ -84,13 +84,13 @@ export SPARK_DRIVER_MEMORY=1G
 export SPARK_MASTER_WEBUI_PORT=18080
 export SPARK_WORKER_WEBUI_PORT=18081
 
-
 export SPARK_WORKER_DIR=/data/spark/work
 export SPARK_LOG_DIR=/var/log/spark
 export SPARK_PID_DIR=$EMR_PID_DIR
 export SPARK_LOCAL_DIRS=/data/spark/local
 
 export SPARK_DAEMON_JAVA_OPTS="-Dspark.deploy.recoveryMode=ZOOKEEPER -Dspark.deploy.zookeeper.url=hadoop01:2181 -Dspark.deploy.zookeeper.dir=/spark "
-#export LD_LIBRARY_PATH=/usr/lib/hadoop-current/lib/native
+
+export LD_LIBRARY_PATH=${HADOOP_HOME}/lib/native
 
 export SPARK_LIBRARY_PATH=${SPARK_HOME}/jars

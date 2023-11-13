@@ -87,6 +87,12 @@
   </property>
 
   <property>
+    <name>yarn.log.server.url</name>
+    <value>http://hadoop01:19888/jobhistory/logs</value>
+    <description>URL for log aggregation server</description>
+  </property>
+
+  <property>
     <name>yarn.nodemanager.remote-app-log-dir</name>
     <value>hdfs://hadoop01:9000/var/log/hadoop-yarn/apps</value>
     <description>Where to aggregate logs to.</description>

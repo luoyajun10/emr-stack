@@ -131,7 +131,6 @@
   </property>
 
   <property>
-
       <name>hive.server2.thrift.port</name>
       <value>10000</value>
   </property>
@@ -194,6 +193,7 @@
   <property>
     <name>hive.tez.container.size</name>
     <value>1024</value>
+    <description>By default Tez will spawn containers of the size of a mapper. This can be used to overwrite the default.</description>
   </property>
 
   <property>
